@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Funny page😁😁</title>
+
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.04rem;
+        }
+        .container
+        {   
+            min-width: 450px ;
+            max-width: auto;
+            min-height: 150px;
+            max-height:auto;
+            /* padding: 10px; */
+            background-color: rgb(251, 245, 220);
+            border: 1px solid black;
+            border-radius: 1px;
+            /* ---- */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            /* ------ */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .top
+        {
+            display: flex;
+            justify-content: space-between;
+            margin: 1px 15px;
+        }
+        .cross
+        {   
+            margin-top: 2pxx;
+            font-size: 1.2rem;
+             font-weight: bold;
+              color: red; 
+              border: 1px solid black;
+               padding: 3px;
+                cursor: pointer;
+                
+        }
+        .middle
+        {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: start; */
+            align-items: center;
+        }
+        .bottom
+        {
+            display: flex;
+            justify-content: space-evenly;
+            /* margin: 9px; */
+            background-color: rgba(229, 203, 101, 0.341);
+        }
+        .button{
+            min-width: 80px;
+            max-width: fit-content;
+            margin: 9px;
+        }
+       
+    </style>
+</head>
+<body onload = showFirstMsg()>
+    <div class="container">
+
+        <!-- top of the alert box -->
+        <div class="top">
+            <p style="margin: 3px;">⚠️ Alert!</p>
+            <p class = "cross" >X</p>
+        </div>
+
+        <!-- middle portion of the alert box -->
+        <div class="middle" style="margin: 5px;">
+           <p id="errorMsg"></p>
+            <br>    
+            <p id="final_error"></p>
+        </div>
+
+        <!-- bottom portion of alert box -->
+        <div class="bottom" >
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
